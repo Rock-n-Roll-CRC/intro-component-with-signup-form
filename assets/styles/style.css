@@ -1,0 +1,35 @@
+/* ! G-E-N-E-R-A-L ! */
+
+/* Custom Properties */
+:root {
+  /* Primary Colors */
+  --primary-color-red: #ff7a7a;
+  --primary-color-green: #38cc8c;
+
+  /* Accent Colors */
+  --accent-color-blue: #6055a5;
+
+  /* Neutral Colors */
+  --neutral-color-dark-blue: #3e3c49;
+  --neutral-color-grayish-blue: #b9b6d3;
+}
+
+/* Body Styles (Background, Font, Etc.) */
+body {
+  display: flex;
+  justify-content: center;
+  background: url("../images/bg-intro-mobile.png"), var(--primary-color-red);
+  font: 400 1rem Poppins, sans-serif;
+}
+
+/* Styles For Visually Hidden Elements  */
+.visually-hidden:not(:focus, :active) {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
