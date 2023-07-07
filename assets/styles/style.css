@@ -33,3 +33,47 @@ body {
   white-space: nowrap;
   width: 1px;
 }
+
+/* ! M-A-I-N ! */
+
+/* Greeting (Slogan + Description) */
+.greeting {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  max-width: 20rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 5.75rem;
+}
+
+.greeting > .slogan {
+  font: 700 1.7rem Poppins, sans-serif;
+  line-height: 1.31;
+}
+
+.greeting > .description {
+  line-height: 1.63;
+}
+
+/*  Free Trial Form  */
+.free-trial-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-top: 3.9rem;
+}
+
+.free-trial-form > .description {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: var(--accent-color-blue);
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.16rem 0.05rem;
+}
+
+.free-trial-form > .description > p {
+  max-width: 55%;
+}
