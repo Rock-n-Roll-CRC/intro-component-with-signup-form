@@ -20,6 +20,7 @@ body {
   justify-content: center;
   background: url("../images/bg-intro-mobile.png"), var(--primary-color-red);
   font: 400 1rem Poppins, sans-serif;
+  padding: 0 1.5rem;
 }
 
 /* Styles For Visually Hidden Elements  */
@@ -35,16 +36,21 @@ body {
 }
 
 /* ! M-A-I-N ! */
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 21rem;
+  gap: 3.9rem;
+  margin-top: 5.75rem;
+}
 
 /* Greeting (Slogan + Description) */
 .greeting {
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
-  max-width: 20rem;
   color: #fff;
   text-align: center;
-  margin-top: 5.75rem;
 }
 
 .greeting > .slogan {
@@ -60,8 +66,6 @@ body {
 .free-trial-form {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
-  margin-top: 3.9rem;
 }
 
 .free-trial-form > .description {
@@ -69,11 +73,18 @@ body {
   justify-content: center;
   color: #fff;
   background-color: var(--accent-color-blue);
+  font: 400 0.94rem Poppins, sans-serif;
   text-align: center;
   border-radius: 10px;
-  padding: 1.16rem 0.05rem;
+  padding: 1.05rem 1.5rem;
+  box-shadow: 0 8px 0 #00000029;
 }
 
 .free-trial-form > .description > p {
-  max-width: 55%;
+  max-width: 11rem;
+  line-height: 1.8;
+}
+
+.free-trial-form > .description > p > span {
+  font: 600 1rem Poppins, sans-serif;
 }
