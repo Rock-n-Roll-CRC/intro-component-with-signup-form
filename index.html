@@ -40,9 +40,12 @@
     <h1 class="visually-hidden">Intro component with sign-up form</h1>
 
     <main>
-      <!-- Greeting (Slogan + Description) -->
+      <!-- Greeting -->
       <div class="greeting">
+        <!-- Slogan -->
         <p class="slogan">Learn to code by watching others</p>
+
+        <!-- Description -->
         <p class="description">
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
@@ -52,11 +55,33 @@
 
       <!-- Free Trial Form -->
       <article class="free-trial-form">
+        <!-- Description -->
         <div class="description">
           <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
 
-        <form action="#" class="form"></form>
+        <!-- Form -->
+        <form action="#" class="form">
+          <input
+            type="text"
+            name="#"
+            id="first-name"
+            placeholder="First Name"
+          />
+          <input type="text" name="#" id="last-name" placeholder="Last Name" />
+          <input type="email" name="#" id="email" placeholder="Email Address" />
+          <input
+            type="password"
+            name="#"
+            id="password"
+            placeholder="Password"
+          />
+          <button class="submit-button">Claim your free trial</button>
+          <p class="submit-disclaimer">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
       </article>
     </main>
   </body>
