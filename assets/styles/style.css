@@ -102,25 +102,54 @@ main {
   box-shadow: 0 8px 0 #00000029;
 }
 
-.free-trial-form > .form > input {
+.free-trial-form > .form > .form-child {
+  position: relative;
+}
+
+.free-trial-form > .form input {
+  width: 100%;
   border: 1px solid var(--neutral-color-grayish-blue);
   border-radius: 5px;
   padding: 0.91rem 1.1rem;
 }
 
-.free-trial-form > .form > input::placeholder {
+.free-trial-form > .form input.invalidated {
+  color: var(--primary-color-red);
+  border: 2px solid var(--primary-color-red);
+}
+
+.free-trial-form > .form input::placeholder {
   color: var(--neutral-color-dark-blue);
   font: 600 0.9rem Poppins, sans-serif;
 }
 
-.free-trial-form > .form > input:focus {
+.free-trial-form > .form input:focus {
   outline: none;
 }
 
-.free-trial-form > .form > input:focus::placeholder {
+.free-trial-form > .form input:focus::placeholder {
   color: transparent;
 }
 
+.free-trial-form > .form .error-icon {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  height: 3.3rem;
+  width: 3rem;
+  background: url("../images/icon-error.svg") left / 45% no-repeat, #fff;
+}
+
+.free-trial-form > .form .error-message {
+  display: none;
+  color: var(--primary-color-red);
+  font: italic 600 0.68rem Poppins, sans-serif;
+  text-align: right;
+  margin-top: 0.4rem;
+}
+
+/* Submit Button + Disclaimer */
 .free-trial-form > .form > .submit-button {
   color: #fff;
   background-color: var(--primary-color-green);

@@ -62,20 +62,55 @@
 
         <!-- Form -->
         <form action="#" class="form">
-          <input
-            type="text"
-            name="#"
-            id="first-name"
-            placeholder="First Name"
-          />
-          <input type="text" name="#" id="last-name" placeholder="Last Name" />
-          <input type="email" name="#" id="email" placeholder="Email Address" />
-          <input
-            type="password"
-            name="#"
-            id="password"
-            placeholder="Password"
-          />
+          <!-- Form First Name -->
+          <div class="form-first-name form-child">
+            <input
+              type="text"
+              name="#"
+              id="first-name"
+              placeholder="First Name"
+            />
+            <div class="error-icon"></div>
+            <p class="error-message">First Name cannot be empty</p>
+          </div>
+
+          <!-- Form Last Name -->
+          <div class="form-last-name form-child">
+            <input
+              type="text"
+              name="#"
+              id="last-name"
+              placeholder="Last Name"
+            />
+            <div class="error-icon"></div>
+            <p class="error-message">Last Name cannot be empty</p>
+          </div>
+
+          <!-- Form Email Address -->
+          <div class="form-email-address form-child">
+            <input
+              type="email"
+              name="#"
+              id="email"
+              placeholder="Email Address"
+            />
+            <div class="error-icon"></div>
+            <p class="error-message">Looks like this is not an email</p>
+          </div>
+
+          <!-- Form Password -->
+          <div class="form-password form-child">
+            <input
+              type="password"
+              name="#"
+              id="password"
+              placeholder="Password"
+            />
+            <div class="error-icon"></div>
+            <p class="error-message">Password cannot be empty</p>
+          </div>
+
+          <!-- Submit Button + Disclaimer -->
           <button class="submit-button">Claim your free trial</button>
           <p class="submit-disclaimer">
             By clicking the button, you are agreeing to our
