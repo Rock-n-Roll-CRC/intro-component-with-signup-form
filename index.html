@@ -23,7 +23,7 @@
       rel="stylesheet"
       href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
     />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
     <script src="./assets/scripts/script.js" defer></script>
 
     <!-- Linking Fonts -->
@@ -71,7 +71,9 @@
               placeholder="First Name"
             />
             <div class="error-icon"></div>
-            <p class="error-message">First Name cannot be empty</p>
+            <p class="error-message-empty error-message">
+              First Name cannot be empty
+            </p>
           </div>
 
           <!-- Form Last Name -->
@@ -83,7 +85,9 @@
               placeholder="Last Name"
             />
             <div class="error-icon"></div>
-            <p class="error-message">Last Name cannot be empty</p>
+            <p class="error-message-empty error-message">
+              Last Name cannot be empty
+            </p>
           </div>
 
           <!-- Form Email Address -->
@@ -95,7 +99,12 @@
               placeholder="Email Address"
             />
             <div class="error-icon"></div>
-            <p class="error-message">Looks like this is not an email</p>
+            <p class="error-message-empty error-message">
+              Email Address cannot be empty
+            </p>
+            <p class="error-message-email error-message">
+              Looks like this is not an email
+            </p>
           </div>
 
           <!-- Form Password -->
@@ -107,11 +116,15 @@
               placeholder="Password"
             />
             <div class="error-icon"></div>
-            <p class="error-message">Password cannot be empty</p>
+            <p class="error-message-empty error-message">
+              Password cannot be empty
+            </p>
           </div>
 
           <!-- Submit Button + Disclaimer -->
-          <button class="submit-button">Claim your free trial</button>
+          <button type="button" class="submit-button">
+            Claim your free trial
+          </button>
           <p class="submit-disclaimer">
             By clicking the button, you are agreeing to our
             <span>Terms and Services</span>

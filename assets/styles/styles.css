@@ -116,6 +116,7 @@ main {
 .free-trial-form > .form input.invalidated {
   color: var(--primary-color-red);
   border: 2px solid var(--primary-color-red);
+  padding: 0.847rem 1.037rem;
 }
 
 .free-trial-form > .form input::placeholder {
@@ -136,9 +137,13 @@ main {
   position: absolute;
   top: 2px;
   right: 2px;
-  height: 3.3rem;
+  height: 3.2rem;
   width: 3rem;
   background: url("../images/icon-error.svg") left / 45% no-repeat, #fff;
+}
+
+.free-trial-form > .form .error-icon.invalidated {
+  display: block;
 }
 
 .free-trial-form > .form .error-message {
@@ -147,6 +152,10 @@ main {
   font: italic 600 0.68rem Poppins, sans-serif;
   text-align: right;
   margin-top: 0.4rem;
+}
+
+.free-trial-form > .form .error-message.invalidated {
+  display: block;
 }
 
 /* Submit Button + Disclaimer */
