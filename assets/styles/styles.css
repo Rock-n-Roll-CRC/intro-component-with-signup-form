@@ -108,7 +108,7 @@ main {
 
 .free-trial-form > .form input {
   width: 100%;
-  border: 1px solid var(--neutral-color-grayish-blue);
+  border: 1px solid #bebebe;
   border-radius: 5px;
   padding: 0.91rem 1.1rem;
 }
@@ -120,12 +120,17 @@ main {
 }
 
 .free-trial-form > .form input::placeholder {
-  color: var(--neutral-color-dark-blue);
+  color: gray;
   font: 600 0.9rem Poppins, sans-serif;
 }
 
 .free-trial-form > .form input:focus {
+  border: 1px solid var(--accent-color-blue);
   outline: none;
+}
+
+.free-trial-form > .form input.invalidated:focus {
+  border: 2px solid var(--primary-color-red);
 }
 
 .free-trial-form > .form input:focus::placeholder {
@@ -191,17 +196,84 @@ main {
   transition: opacity 0.15s;
 }
 
-.free-trial-form > .form > .submit-disclaimer > span {
+.free-trial-form > .form > .submit-disclaimer > a {
   color: var(--primary-color-red);
   font-weight: 600;
   cursor: pointer;
 }
 
-.free-trial-form > .form > .submit-disclaimer > span:hover {
+.free-trial-form > .form > .submit-disclaimer > a:hover {
   opacity: 0.8;
   text-decoration: underline;
 }
 
-.free-trial-form > .form > .submit-disclaimer > span:active {
+.free-trial-form > .form > .submit-disclaimer > a:active {
   opacity: 0.7;
+}
+
+/* ! D-E-S-K-T-O-P S-C-R-E-E-N-S ! */
+@media all and (width >= 64rem) {
+  body {
+    background: url("../images/bg-intro-desktop.png"), var(--primary-color-red);
+  }
+
+  main {
+    flex-direction: row;
+    align-items: center;
+    max-width: 70rem;
+    gap: 4.1rem;
+    margin-top: 6.85rem;
+  }
+
+  .greeting {
+    max-width: 31.5rem;
+    text-align: start;
+    gap: 2.2rem;
+  }
+
+  .greeting > .slogan {
+    font: 700 3.07rem Poppins, sans-serif;
+    line-height: 1.1;
+  }
+
+  .greeting > .description {
+    font: 400 1rem Poppins, sans-serif;
+  }
+
+  .free-trial-form {
+    gap: 1.5rem;
+  }
+
+  .free-trial-form > .description {
+    padding: 1.2rem 7rem 1rem;
+  }
+
+  .free-trial-form > .description > p {
+    max-width: none;
+    line-height: normal;
+  }
+
+  .free-trial-form > .form {
+    gap: 1.25rem;
+    padding: 2.51rem;
+  }
+
+  .free-trial-form > .form input {
+    font: 600 0.9rem Poppins, sans-serif;
+    padding: 1.102rem 1.9rem 0.96rem;
+  }
+
+  .free-trial-form > .form > .submit-disclaimer {
+    word-spacing: -0.3px;
+    line-height: normal;
+    padding: 0.02rem 0;
+  }
+
+  .free-trial-form > .form .error-icon {
+    height: 3rem;
+  }
+
+  .free-trial-form > .form input.invalidated {
+    padding: 1.039rem 1.837rem 0.897rem;
+  }
 }
