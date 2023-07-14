@@ -226,7 +226,7 @@ main {
   main {
     flex-direction: row;
     align-items: center;
-    max-width: 70rem;
+    max-width: none;
     gap: 4.1rem;
     margin-top: 6.85rem;
   }
@@ -254,7 +254,7 @@ main {
 
   /* Description */
   .free-trial-form > .description {
-    padding: 1.2rem 7rem 1rem;
+    padding: 1.2rem 0 1rem;
   }
 
   .free-trial-form > .description > p {
