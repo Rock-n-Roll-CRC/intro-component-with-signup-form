@@ -46,5 +46,5 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Rock-n-Roll-CRC](https://www.frontendmentor.io/profile/Rock-n-Roll-CRC)
-- Twitter - [@Rock_n_Roll_CRC](https://www.twitter.com/yourusername)
+- Twitter - [@Rock_n_Roll_CRC](https://twitter.com/Rock_n_Roll_CRC)
 - Discord - rock_n_roll_crc
