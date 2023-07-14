@@ -69,6 +69,7 @@
               name="#"
               id="first-name"
               placeholder="First Name"
+              aria-label="First Name"
             />
             <div class="error-icon"></div>
             <p class="error-message-empty error-message">
@@ -83,6 +84,7 @@
               name="#"
               id="last-name"
               placeholder="Last Name"
+              aria-label="Last Name"
             />
             <div class="error-icon"></div>
             <p class="error-message-empty error-message">
@@ -97,6 +99,7 @@
               name="#"
               id="email"
               placeholder="Email Address"
+              aria-label="Email Address"
             />
             <div class="error-icon"></div>
             <p class="error-message-empty error-message">
@@ -114,6 +117,7 @@
               name="#"
               id="password"
               placeholder="Password"
+              aria-label="Password"
             />
             <div class="error-icon"></div>
             <p class="error-message-empty error-message">
@@ -122,12 +126,16 @@
           </div>
 
           <!-- Submit Button + Disclaimer -->
-          <button type="button" class="submit-button">
+          <button
+            type="button"
+            class="submit-button"
+            aria-label="Claim your free trial"
+          >
             Claim your free trial
           </button>
           <p class="submit-disclaimer">
             By clicking the button, you are agreeing to our
-            <a href="#">Terms and Services</a>
+            <a href="#" aria-label="Terms and Services">Terms and Services</a>
           </p>
         </form>
       </article>
