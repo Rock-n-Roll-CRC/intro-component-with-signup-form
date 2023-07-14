@@ -250,6 +250,7 @@ main {
   /*  Free Trial Form  */
   .free-trial-form {
     gap: 1.5rem;
+    width: 33.7rem;
   }
 
   /* Description */
